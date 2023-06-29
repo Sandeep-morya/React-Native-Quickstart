@@ -11,18 +11,16 @@ const Box = styled(View, "gap-2 items-center");
 export default function Third() {
 	const router = useRouter();
 	return (
-		<SafeAreaView>
-			<Box>
-				<Touchable onPress={() => router.replace("/")}>
-					<P>Go to Home</P>
-				</Touchable>
-				<Touchable onPress={() => router.push("/")}>
-					<P>Go to Home as Next Screen</P>
-				</Touchable>
-				<Touchable onPress={() => router.back()}>
-					<P>Go Back</P>
-				</Touchable>
-			</Box>
-		</SafeAreaView>
+		<Box>
+			<Touchable onPress={() => router.replace("/")}>
+				<P>Go to Home</P>
+			</Touchable>
+			<Touchable onPress={() => router.push("/")}>
+				<P>Go to Home as Next Screen</P>
+			</Touchable>
+			<Touchable onPress={() => router.back()}>
+				<P>Go Back</P>
+			</Touchable>
+		</Box>
 	);
 }
