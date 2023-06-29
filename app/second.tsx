@@ -5,17 +5,14 @@ import { Link } from "expo-router";
 
 export default function Second() {
 	return (
-		// romove the SafeAreaView if have not set options { headersShown:false}
-		<SafeAreaView>
-			<View>
-				<Text>Second</Text>
-				<Link href={"/"} asChild>
-					<Button title="Go To Home" />
-				</Link>
-				<Link href={"/third"} asChild>
-					<Button title="Go To Third Screen" />
-				</Link>
-			</View>
-		</SafeAreaView>
+		<View>
+			<Text>Second</Text>
+			<Link href={"/"} asChild>
+				<Button title="Go To Home" />
+			</Link>
+			<Link href={"/third"} asChild>
+				<Button title="Go To Third Screen" />
+			</Link>
+		</View>
 	);
 }
